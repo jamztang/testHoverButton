@@ -15,6 +15,8 @@
 		1A85A45A23EBAB94009C8982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A85A45823EBAB94009C8982 /* LaunchScreen.storyboard */; };
 		1A85A46523EBAB94009C8982 /* testHoverButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A46423EBAB94009C8982 /* testHoverButtonTests.swift */; };
 		1A85A47023EBAB94009C8982 /* testHoverButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A46F23EBAB94009C8982 /* testHoverButtonUITests.swift */; };
+		1AB83A5523EC30810097DB54 /* ToolTipGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */; };
+		1AB83A5723EC3DD60097DB54 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		1A85A46B23EBAB94009C8982 /* testHoverButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testHoverButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A85A46F23EBAB94009C8982 /* testHoverButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testHoverButtonUITests.swift; sourceTree = "<group>"; };
 		1A85A47123EBAB94009C8982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A85A47D23EBABDB009C8982 /* testHoverButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testHoverButton.entitlements; sourceTree = "<group>"; };
+		1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipGestureRecognizer.swift; sourceTree = "<group>"; };
+		1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +104,16 @@
 		1A85A44C23EBAB92009C8982 /* testHoverButton */ = {
 			isa = PBXGroup;
 			children = (
+				1A85A47D23EBABDB009C8982 /* testHoverButton.entitlements */,
 				1A85A44D23EBAB92009C8982 /* AppDelegate.swift */,
 				1A85A44F23EBAB92009C8982 /* SceneDelegate.swift */,
 				1A85A45123EBAB92009C8982 /* ViewController.swift */,
+				1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */,
 				1A85A45323EBAB92009C8982 /* Main.storyboard */,
 				1A85A45623EBAB94009C8982 /* Assets.xcassets */,
 				1A85A45823EBAB94009C8982 /* LaunchScreen.storyboard */,
 				1A85A45B23EBAB94009C8982 /* Info.plist */,
+				1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */,
 			);
 			path = testHoverButton;
 			sourceTree = "<group>";
@@ -261,7 +269,9 @@
 			files = (
 				1A85A45223EBAB92009C8982 /* ViewController.swift in Sources */,
 				1A85A44E23EBAB92009C8982 /* AppDelegate.swift in Sources */,
+				1AB83A5723EC3DD60097DB54 /* ToolTipView.swift in Sources */,
 				1A85A45023EBAB92009C8982 /* SceneDelegate.swift in Sources */,
+				1AB83A5523EC30810097DB54 /* ToolTipGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testHoverButton/testHoverButton.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testHoverButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testHoverButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +465,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testHoverButton/testHoverButton.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testHoverButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodnotes.testHoverButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
