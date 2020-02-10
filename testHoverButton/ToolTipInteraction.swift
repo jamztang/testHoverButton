@@ -23,7 +23,7 @@ class ToolTipInteraction: NSObject {
     }
 
     @objc func handleToolTipGesture(_ recognizer: UIHoverGestureRecognizer) {
-        let point = recognizer.location(in: view)
+        let point = recognizer.location(in: nil) // window location
         if recognizer.state == .began, let tooltip = tooltip {
             let cursorOffset: CGFloat = 25
             label.text = tooltip
@@ -40,7 +40,7 @@ class ToolTipInteraction: NSObject {
             label.font = UIFont.preferredFont(forTextStyle: .footnote)
             label.sizeToFit()
             label.transform = .init(translationX: point.x, y: point.y + cursorOffset)
-            view.addSubview(label)
+            view.window?.addSubview(label)
             label.alpha = 0
             UIView.animate(withDuration: 0.1) {
                 self.label.alpha = 1
