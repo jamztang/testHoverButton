@@ -110,13 +110,13 @@
 				1A85A44D23EBAB92009C8982 /* AppDelegate.swift */,
 				1A85A44F23EBAB92009C8982 /* SceneDelegate.swift */,
 				1A85A45123EBAB92009C8982 /* ViewController.swift */,
-				1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */,
 				1A85A45323EBAB92009C8982 /* Main.storyboard */,
 				1A85A45623EBAB94009C8982 /* Assets.xcassets */,
 				1A85A45823EBAB94009C8982 /* LaunchScreen.storyboard */,
 				1A85A45B23EBAB94009C8982 /* Info.plist */,
 				1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */,
 				1AF805B723F149D000083374 /* ToolTipInteraction.swift */,
+				1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */,
 			);
 			path = testHoverButton;
 			sourceTree = "<group>";
@@ -453,6 +453,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testHoverButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +475,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = H5BVQ8XRL4;
 				INFOPLIST_FILE = testHoverButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

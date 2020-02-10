@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class ToolTipView: UIView {
     @IBInspectable var tooltip: String? {
         didSet {
@@ -22,6 +23,7 @@ class ToolTipView: UIView {
     }
 }
 
+@available(iOS 13.0, *)
 class ToolTipButton: UIButton {
     @IBInspectable var tooltip: String? {
         didSet {

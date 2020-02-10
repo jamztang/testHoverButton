@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class ToolTipInteraction: NSObject {
     private let toolTipGestureRecognizer = ToolTipGestureRecognizer()
     private let label = UITextView(frame: .zero)
@@ -57,6 +58,7 @@ class ToolTipInteraction: NSObject {
 }
 
 extension UIView {
+    @available(iOS 13.0, *)
     func addInteraction(_ interaction: ToolTipInteraction) {
         interaction.setupView(self)
     }

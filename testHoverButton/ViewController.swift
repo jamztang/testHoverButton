@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @available(iOS 13.0, *)
     @objc func handleToolTipGesture(_ recognizer: UIHoverGestureRecognizer) {
         let point = recognizer.location(in: self.view)
         if recognizer.state == .began {

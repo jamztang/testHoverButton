@@ -7,6 +7,8 @@
 //
 
 import UIKit.UIGestureRecognizerSubclass
+
+@available(iOS 13.0, *)
 class ToolTipGestureRecognizer: UIHoverGestureRecognizer {
     private var date: Date?
     private var didBegan: Bool = false
