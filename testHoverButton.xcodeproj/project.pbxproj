@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A261E7923F1629600059C20 /* TTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A261E7823F1629600059C20 /* TTView.swift */; };
 		1A85A44E23EBAB92009C8982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A44D23EBAB92009C8982 /* AppDelegate.swift */; };
 		1A85A45023EBAB92009C8982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A44F23EBAB92009C8982 /* SceneDelegate.swift */; };
 		1A85A45223EBAB92009C8982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A45123EBAB92009C8982 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A261E7823F1629600059C20 /* TTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTView.swift; sourceTree = "<group>"; };
 		1A85A44A23EBAB92009C8982 /* testHoverButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testHoverButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A85A44D23EBAB92009C8982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A85A44F23EBAB92009C8982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				1A85A44D23EBAB92009C8982 /* AppDelegate.swift */,
 				1A85A44F23EBAB92009C8982 /* SceneDelegate.swift */,
 				1A85A45123EBAB92009C8982 /* ViewController.swift */,
+				1A261E7823F1629600059C20 /* TTView.swift */,
 				1A85A45323EBAB92009C8982 /* Main.storyboard */,
 				1A85A45623EBAB94009C8982 /* Assets.xcassets */,
 				1A85A45823EBAB94009C8982 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 			files = (
 				1A85A45223EBAB92009C8982 /* ViewController.swift in Sources */,
 				1A85A44E23EBAB92009C8982 /* AppDelegate.swift in Sources */,
+				1A261E7923F1629600059C20 /* TTView.swift in Sources */,
 				1AB83A5723EC3DD60097DB54 /* ToolTipView.swift in Sources */,
 				1A85A45023EBAB92009C8982 /* SceneDelegate.swift in Sources */,
 				1AF805B823F149D000083374 /* ToolTipInteraction.swift in Sources */,

@@ -43,6 +43,11 @@ class ToolTipGestureRecognizer: UIHoverGestureRecognizer {
         }
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        super.touchesBegan(touches, with: event)
+        reset()
+    }
+
     override func reset() {
         super.reset()
         date = nil

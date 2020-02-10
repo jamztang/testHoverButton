@@ -8,33 +8,13 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
-class ToolTipView: UIView {
-    @IBInspectable var tooltip: String? {
-        didSet {
-            tooltipInteraction.tooltip = self.tooltip
-        }
-    }
-    private let tooltipInteraction = ToolTipInteraction()
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        addInteraction(tooltipInteraction)
-    }
+public protocol ToolTipView: class {
+    var tooltip: String? { get }
 }
 
-@available(iOS 13.0, *)
-class ToolTipButton: UIButton {
-    @IBInspectable var tooltip: String? {
-        didSet {
-            tooltipInteraction.tooltip = self.tooltip
-        }
-    }
-    private let tooltipInteraction = ToolTipInteraction()
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        addInteraction(tooltipInteraction)
+public extension ToolTipView where Self: UIView {
+    @available(iOS 13.0, *)
+    func addInteraction(_ interaction: ToolTipInteraction) {
+        interaction.setupView(self)
     }
 }
-

@@ -9,13 +9,13 @@
 import UIKit
 
 @available(iOS 13.0, *)
-class ToolTipInteraction: NSObject {
+public class ToolTipInteraction: NSObject {
+    public typealias View = (UIView & ToolTipView)
     private let toolTipGestureRecognizer = ToolTipGestureRecognizer()
     private let label = UITextView(frame: .zero)
-    private var view: UIView!
-    var tooltip: String?
+    private var view: View!
 
-    func setupView(_ view: UIView) {
+    func setupView(_ view: View) {
         self.view = view
         label.alpha = 0
         toolTipGestureRecognizer.addTarget(self, action: #selector(handleToolTipGesture(_:)))
@@ -24,7 +24,7 @@ class ToolTipInteraction: NSObject {
 
     @objc func handleToolTipGesture(_ recognizer: UIHoverGestureRecognizer) {
         let point = recognizer.location(in: nil) // window location
-        if recognizer.state == .began, let tooltip = tooltip {
+        if recognizer.state == .began, let tooltip = view.tooltip {
             let cursorOffset: CGFloat = 25
             label.text = tooltip
             label.backgroundColor = UIColor.secondarySystemBackground
@@ -54,12 +54,5 @@ class ToolTipInteraction: NSObject {
                 }
             }
         }
-    }
-}
-
-extension UIView {
-    @available(iOS 13.0, *)
-    func addInteraction(_ interaction: ToolTipInteraction) {
-        interaction.setupView(self)
     }
 }
