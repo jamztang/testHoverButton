@@ -17,6 +17,7 @@
 		1A85A47023EBAB94009C8982 /* testHoverButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85A46F23EBAB94009C8982 /* testHoverButtonUITests.swift */; };
 		1AB83A5523EC30810097DB54 /* ToolTipGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */; };
 		1AB83A5723EC3DD60097DB54 /* ToolTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */; };
+		1AF805B823F149D000083374 /* ToolTipInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF805B723F149D000083374 /* ToolTipInteraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1A85A47D23EBABDB009C8982 /* testHoverButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testHoverButton.entitlements; sourceTree = "<group>"; };
 		1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipGestureRecognizer.swift; sourceTree = "<group>"; };
 		1AB83A5623EC3DD60097DB54 /* ToolTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipView.swift; sourceTree = "<group>"; };
+		1AF805B723F149D000083374 /* ToolTipInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTipInteraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				1A85A45823EBAB94009C8982 /* LaunchScreen.storyboard */,
 				1A85A45B23EBAB94009C8982 /* Info.plist */,
 				1AB83A5423EC30810097DB54 /* ToolTipGestureRecognizer.swift */,
+				1AF805B723F149D000083374 /* ToolTipInteraction.swift */,
 			);
 			path = testHoverButton;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				1A85A44E23EBAB92009C8982 /* AppDelegate.swift in Sources */,
 				1AB83A5723EC3DD60097DB54 /* ToolTipView.swift in Sources */,
 				1A85A45023EBAB92009C8982 /* SceneDelegate.swift in Sources */,
+				1AF805B823F149D000083374 /* ToolTipInteraction.swift in Sources */,
 				1AB83A5523EC30810097DB54 /* ToolTipGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
